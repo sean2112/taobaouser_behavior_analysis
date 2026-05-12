@@ -1,8 +1,8 @@
 # 淘宝用户行为分析项目
 
-本仓库为个人学习与项目展示用途，围绕淘宝用户行为数据构建完整的数据分析流程，涵盖数据清洗、指标构建、用户分层分析、商品转化率分析及可视化建模。
+本仓库为个人数据分析学习与项目展示用途，围绕淘宝用户行为日志数据构建完整的数据分析流程，涵盖数据清洗、指标构建、用户分层分析、商品转化率分析及可视化建模。
 
-本项目重点体现数据分析过程的结构化能力与多工具协同能力。
+本项目重点体现结构化分析能力与多工具协同能力。
 
 ---
 
@@ -11,6 +11,7 @@
 - [项目概述](#项目概述)
 - [数据来源](#数据来源)
 - [架构设计](#架构设计)
+- [成果展示](#成果展示)
 - [仓库结构](#仓库结构)
 - [能力体现](#能力体现)
 
@@ -44,7 +45,6 @@ https://tianchi.aliyun.com/dataset/649
 - 原始数据规模较大（约3GB，亿级行为记录），未上传至本仓库
 - 仓库中仅保留清洗后与分析相关的结果数据文件
 
-
 ---
 
 # 架构设计
@@ -68,33 +68,90 @@ https://tianchi.aliyun.com/dataset/649
 ## 3. 可视化建模层（Power BI）
 
 - 指标度量建模（DAX）
-- Top N 分析
+- 用户分层可视化
+- 时间趋势分析
 - 分布结构展示
 - 多页面结构化报表设计
 
-整体架构体现数据分析流程的分层思想：
+整体架构体现分析流程的分层思想：
 
 数据处理 → 数据结构化 → 指标建模 → 可视化表达
 
 ---
 
+# 成果展示
+
+## 1. 运营总览
+
+![运营总览](images/overview.png)
+
+展示核心指标：
+
+- 总购买次数
+- 日均购买次数
+- 高价值用户数量
+- 高价值用户占比
+
+体现整体用户规模与核心结构。
+
+---
+
+## 2. 时间趋势分析
+
+![时间趋势分析](images/time_trend.png)
+
+- 每日购买趋势
+- 日均参考线
+- 日增长率分析
+- 波动结构识别
+
+体现用户活跃趋势与增长节奏。
+
+---
+
+## 3. 用户分析（RFM模型）
+
+![用户分析RFM](images/rfm_analysis.png)
+
+- RFM 分层结构展示
+- 高价值用户占比
+- 最近购买间隔分布
+- 购买频次分布
+
+体现用户价值结构与消费分层特征。
+
+---
+
+## 4. 商品与行为结构分析
+
+![商品分析](images/item_analysis.png)
+
+- 商品转化率分布
+- 用户购买频次分布
+- 结构集中度分析
+
+体现商品效率与行为分布结构。
+
+---
+
 # 仓库结构
+
 ```
 taobaouser_behavior_analysis/
 │
 ├── 总结笔记/
-│ ├── python.md
-│ ├── MySQL.md
-│ ├── Power BI.md
-│ ├── Excel.md
+│   ├── python.md
+│   ├── MySQL.md
+│   ├── Power BI.md
+│   ├── Excel.md
 │
 ├── 项目文件/
-│ ├── taobaousers_etl.py
-│ ├── taobaousers_analysis.sql
-│ ├── taobaousers_analysis.pbix
-│ ├── daily_buy.csv
-│ ├── item_conversion.csv
-│ ├── rfm_table.csv
+│   ├── taobaousers_etl.py
+│   ├── taobaousers_analysis.sql
+│   ├── taobaousers_analysis.pbix
+│   ├── daily_buy.csv
+│   ├── item_conversion.csv
+│   ├── rfm_table.csv
 │
 └── LICENSE
 ```
@@ -105,7 +162,7 @@ taobaouser_behavior_analysis/
 - `taobaousers_analysis.sql`：数据库结构与统计逻辑  
 - `taobaousers_analysis.pbix`：Power BI 可视化看板  
 - `daily_buy.csv`、`item_conversion.csv`、`rfm_table.csv`：分析结果数据  
-- `总结笔记/`：各阶段学习总结
+- `总结笔记/`：各阶段学习总结  
 
 ---
 
@@ -115,10 +172,10 @@ taobaouser_behavior_analysis/
 
 - 大规模行为数据处理能力  
 - 转化率与比例指标的严谨计算能力  
-- 用户分层建模能力  
-- 分布结构识别能力  
-- 数据粒度与结构设计意识  
+- 用户分层建模能力（RFM）  
+- 数据结构与粒度设计能力  
+- SQL 分析能力  
 - DAX 度量建模能力  
-- 结构化报表设计能力  
+- 结构化可视化表达能力  
 
-该仓库仅用于记录个人数据分析学习过程与能力积累。
+本仓库仅用于记录个人数据分析学习过程与能力积累。
