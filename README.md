@@ -83,7 +83,7 @@ https://tianchi.aliyun.com/dataset/649
 
 ## 1. 运营总览
 
-![运营总览](images/overview.png)
+![运营总览](项目文件/images/overview.png)
 
 展示核心指标：
 
@@ -98,7 +98,7 @@ https://tianchi.aliyun.com/dataset/649
 
 ## 2. 时间趋势分析
 
-![时间趋势分析](images/time_trend.png)
+![时间趋势分析](项目文件/images/time_trend.png)
 
 - 每日购买趋势
 - 日均参考线
@@ -111,7 +111,7 @@ https://tianchi.aliyun.com/dataset/649
 
 ## 3. 用户分析（RFM模型）
 
-![用户分析RFM](images/rfm_analysis.png)
+![用户分析RFM](项目文件/images/rfm_analysis.png)
 
 - RFM 分层结构展示
 - 高价值用户占比
@@ -124,7 +124,7 @@ https://tianchi.aliyun.com/dataset/649
 
 ## 4. 商品分析
 
-![商品分析](images/item_analysis.png)
+![商品分析](项目文件/images/item_analysis.png)
 
 - 转化率 Top20 商品展示
 - 平均转化率与中位数对比
